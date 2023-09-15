@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=961435721735:domainName=github.nimmervoll.work:region=eu-central-1": {
+    "Id": "/hostedzone/Z03263251GMCYMFYG3IQL",
+    "Name": "github.nimmervoll.work."
+  },
+  "hosted-zone:account=961435721735:domainName=github.nimmervoll.work:region=us-east-1": {
+    "Id": "/hostedzone/Z03263251GMCYMFYG3IQL",
+    "Name": "github.nimmervoll.work."
+  }
+}

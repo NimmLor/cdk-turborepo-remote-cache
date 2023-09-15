@@ -1,0 +1,220 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "cdk-turborepo-remote-cache-certificate.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "cdk-turborepo-remote-cache-certificate.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "cdk-turborepo-remote-cache-certificate": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://961435721735/us-east-1",
+      "properties": {
+        "templateFile": "cdk-turborepo-remote-cache-certificate.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::961435721735:role/cdk-hnb659fds-deploy-role-961435721735-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::961435721735:role/cdk-hnb659fds-cfn-exec-role-961435721735-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-961435721735-us-east-1/d5ab2acae4081b215bbacc5dd8f62b20a1ed293368960b8a2b22a9fbaac5fa2a.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "cdk-turborepo-remote-cache-certificate.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::961435721735:role/cdk-hnb659fds-lookup-role-961435721735-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "cdk-turborepo-remote-cache-certificate.assets"
+      ],
+      "metadata": {
+        "/cdk-turborepo-remote-cache-certificate/Certificate/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Certificate4E7ABB08"
+          }
+        ],
+        "/cdk-turborepo-remote-cache-certificate/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/cdk-turborepo-remote-cache-certificate/ExportsWritereucentral1E172851B/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsWritereucentral1E172851B74269898"
+          }
+        ],
+        "/cdk-turborepo-remote-cache-certificate/Custom::CrossRegionExportWriterCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCrossRegionExportWriterCustomResourceProviderRoleC951B1E1"
+          }
+        ],
+        "/cdk-turborepo-remote-cache-certificate/Custom::CrossRegionExportWriterCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCrossRegionExportWriterCustomResourceProviderHandlerD8786E8A"
+          }
+        ],
+        "/cdk-turborepo-remote-cache-certificate/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/cdk-turborepo-remote-cache-certificate/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "cdk-turborepo-remote-cache-certificate"
+    },
+    "cdk-turborepo-remote-cache.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "cdk-turborepo-remote-cache.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "cdk-turborepo-remote-cache": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://961435721735/eu-central-1",
+      "properties": {
+        "templateFile": "cdk-turborepo-remote-cache.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::961435721735:role/cdk-hnb659fds-deploy-role-961435721735-eu-central-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::961435721735:role/cdk-hnb659fds-cfn-exec-role-961435721735-eu-central-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-961435721735-eu-central-1/fd5e5a1bd0a32dfe61843f0f8c1a0b1e1519801f7f1c851ec1a1eda7d27b0b68.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "cdk-turborepo-remote-cache.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::961435721735:role/cdk-hnb659fds-lookup-role-961435721735-eu-central-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "cdk-turborepo-remote-cache-certificate",
+        "cdk-turborepo-remote-cache.assets"
+      ],
+      "metadata": {
+        "/cdk-turborepo-remote-cache/TurborepoCache/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TurborepoCacheBucket5219854D"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/TurborepoCache/Handler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TurborepoCacheHandlerServiceRoleD5449D48"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/TurborepoCache/Handler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TurborepoCacheHandlerServiceRoleDefaultPolicyA27C854D"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/TurborepoCache/Handler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TurborepoCacheHandler62622169"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/TurborepoCache/Handler/FunctionUrl/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TurborepoCacheHandlerFunctionUrl57F948CC"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/TurborepoCache/Handler/invoke-function-url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TurborepoCacheHandlerinvokefunctionurlB9B14C71"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/TurborepoCache/CacheUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TurborepoCacheCacheUrl96775DF8"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/Cache/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Cache18F6EE16"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/CacheRecord/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CacheRecord7F6F3F2B"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/AWSCloudFrontPartitionHostedZoneIdMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCloudFrontPartitionHostedZoneIdMap"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/ExportsReader/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsReader8B249524"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/Custom::CrossRegionExportReaderCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCrossRegionExportReaderCustomResourceProviderRole10531BBD"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/Custom::CrossRegionExportReaderCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCrossRegionExportReaderCustomResourceProviderHandler46647B68"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/cdk-turborepo-remote-cache/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "cdk-turborepo-remote-cache"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

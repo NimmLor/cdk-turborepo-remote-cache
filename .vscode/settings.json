@@ -1,0 +1,38 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "typescript",
+    "typescriptreact",
+    "yaml"
+  ],
+  "json.format.enable": false,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+  "git.autofetch": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.lock": true,
+    "**/.git": true,
+    "**/.yarn": true,
+    "**/dist": true,
+    "**/cdk.out": true,
+    "**/.cache": true,
+    "package-lock.json": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "**/*.lock": true,
+    "**/.git": true,
+    "**/.yarn": true,
+    "**/dist": true,
+    "**/cdk.out": true,
+    "**/.cache": true,
+    "package-lock.json": true
+  }
+}
