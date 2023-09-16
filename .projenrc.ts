@@ -21,6 +21,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   jsiiVersion: '~5.0.0',
 
+  keywords: ['cdk', 'awscdk', 'aws-cdk', 'turborepo', 'remote-cache'],
+
   name: 'cdk-turborepo-remote-cache',
 
   packageManager: NodePackageManager.YARN2,
