@@ -93,7 +93,10 @@ const functionUrlfqdn = Fn.select(2, Fn.split('/', functionUrl.url))
 const distribution = new aws_cloudfront.Distribution(stack, 'Cache', {
   certificate,
   defaultBehavior: {
+    allowedMethods: aws_cloudfront.AllowedMethods.ALLOW_ALL,
     origin: new aws_cloudfront_origins.HttpOrigin(functionUrlfqdn),
+    originRequestPolicy: aws_cloudfront.OriginRequestPolicy.ALL_VIEWER,
+    viewerProtocolPolicy: aws_cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
   },
   domainNames: [domainName],
 })
